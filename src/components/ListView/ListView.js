@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './ListView.css';
 
-const ListView = ({ articleDetails, displaySelectedArticle }) => {
-    let sortedArticles = articleDetails.sort((a, b) =>
+const ListView = ({ appState, displaySelectedArticle }) => {
+    let sortedArticles = appState.sort((a, b) =>
         (a.section > b.section) ? 1 : ((b.section > a.section) ? -1 : 0))
 
     const mappedArticles = sortedArticles.map(article => {
