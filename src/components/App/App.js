@@ -1,9 +1,12 @@
 import React, { useState, useEffect} from 'react';
 import ListView from '../ListView/ListView';
+import SelectedArticle from '../SelectedArticle/SelectedArticle';
 import '../App/App.css';
+import { Route } from 'react-router-dom';
 
 const App = () => {
   const [appState, setAppState] = useState([])
+  const [selectedArticleState, setSelectedArticleState] = useState([])
 
   useEffect(() => {
     fetch('https://api.nytimes.com/svc/topstories/v2/arts.json?api-key=OGdrXkTilLXjkwGRAzt8mHxh2z48bmb3')
@@ -13,21 +16,20 @@ const App = () => {
       
   }, []);
 
- 
-console.log(appState, "appState")
+ const displaySelectedArticle = (title) => {
+   const selectedArticle = appState.find((article) => article.title === title);
+   setSelectedArticleState(selectedArticle)
+   console.log("clicked")
+ }
+
 
 
   return (
     <div className="App">
-      <ListView articleDetails={appState}/>
+      <Route exact path="/" render={() => <ListView articleDetails={appState} displaySelectedArticle={displaySelectedArticle}/>}/>
+      <Route exact path="/selectedArticle" render={() => <SelectedArticle selectedArticleState={selectedArticleState}/>}/>
     </div>
   );
 }
 
 export default App;
-//OGdrXkTilLXjkwGRAzt8mHxh2z48bmb3
-//https://api.nytimes.com/svc/topstories/v2/arts.json?api-key=yourkey
-
-
-
-//fetch call to here -->https://api.nytimes.com/svc/topstories/v2/arts.json?api-key=OGdrXkTilLXjkwGRAzt8mHxh2z48bmb3
