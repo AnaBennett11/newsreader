@@ -7,12 +7,12 @@ const ListView = ({ articleDetails }) => {
 
     const mappedArticles = sortedArticles.map(article => {
         return (
-            <div key={article.title}>
+            <div key={article.title} className="container">
                 <ul className='list'>
-                   <p>{article.section}</p>
-                   <h3>{article.title}</h3> {/* have an onclick, save that article title to a state, use router 5 to navigate to another page , then a filter of some kind to find that article or a find within that api and direct it to that story then load the rest of the story */}
-                   <p>{article.abstract}</p>
-                   <img src={article.multimedia[1].url} alt={article.title} />
+                    <p>{article.section}</p>
+                    <h3>{article.title}</h3> {/* have an onclick, save that article title to a state, use router 5 to navigate to another page , then a filter of some kind to find that article or a find within that api and direct it to that story then load the rest of the story */}
+                    <p>{article.abstract}</p>
+                    <img src={article.multimedia[1].url} alt={article.title} />
                 </ul>
             </div>
         )
@@ -20,12 +20,14 @@ const ListView = ({ articleDetails }) => {
 
 
     return (
-        <div className='listView'>
+        <div className='newContainer'>
             <h1>Top Stories sorted by Section</h1>
-            <section>
-                {mappedArticles}
-            </section>
-        </div>
+            <div className='listView'>
+                <section>
+                    {mappedArticles}
+                </section>
+            </div>
+        </div >
     )
 }
 
