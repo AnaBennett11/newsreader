@@ -12,6 +12,7 @@ const ListView = ({ articleDetails }) => {
                    <p>{article.section}</p>
                    <h3>{article.title}</h3> {/* have an onclick, save that article title to a state, use router 5 to navigate to another page , then a filter of some kind to find that article or a find within that api and direct it to that story then load the rest of the story */}
                    <p>{article.abstract}</p>
+                   <img src={article.multimedia[1].url} alt={article.title} />
                 </ul>
             </div>
         )

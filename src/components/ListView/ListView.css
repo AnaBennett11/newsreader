@@ -2,3 +2,8 @@
 .list {
     border: 1px solid black;
 }
+
+img {
+ height: 25vh;
+ width: 30vw;
+}

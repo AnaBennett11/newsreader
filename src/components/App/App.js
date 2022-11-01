@@ -10,6 +10,7 @@ const App = () => {
       .then(response => response.json())
       .then(data => setAppState(data.results))
       
+      
   }, []);
 
  
