@@ -1,5 +1,6 @@
 import React from 'react';
 import './SelectedArticle.css'
+import {Link} from 'react-router-dom';
 
 const SelectedArticle = ({selectedArticleState}) => {
     console.log(selectedArticleState);
@@ -12,7 +13,8 @@ const SelectedArticle = ({selectedArticleState}) => {
             <p>{selectedArticleState.created_date}</p>
             <a className="website-anchor" target="_blank" rel="noreferrer" href={selectedArticleState.url}>
                 Click Here to see this article on the NY Times Website
-            </a>
+            </a> <br></br>
+            <Link to="/"><button>Go Home</button></Link>
         </div>
     )
 }

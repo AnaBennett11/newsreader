@@ -12,17 +12,13 @@ const App = () => {
     fetch('https://api.nytimes.com/svc/topstories/v2/arts.json?api-key=OGdrXkTilLXjkwGRAzt8mHxh2z48bmb3')
       .then(response => response.json())
       .then(data => setAppState(data.results))
-
-
   }, []);
-console.log(appState, "the appState")
+
   const displaySelectedArticle = (title) => {
     const selectedArticle = appState.find((article) => article.title === title);
     setSelectedArticleState(selectedArticle)
-    console.log("clicked", appState)
+
   }
-
-
 
   return (
     <div className="App">
