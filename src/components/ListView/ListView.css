@@ -14,6 +14,15 @@ section{
     width: 26vw;
     height: 60vh;
     margin: 2%;
+    border-radius: 2%;
+}
+
+.container {
+    transition: 0.2s;
+
+}
+.container:hover{
+transform: scale(1.05);
 }
 
 img {
