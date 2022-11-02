@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# NY Times News Reader
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Visit this app to see the NY Times top stories!
+## Views:
+https://user-images.githubusercontent.com/98188684/199517460-ba2483da-77df-43f9-89f0-69c50ae10347.mov
 
-## Available Scripts
 
-In the project directory, you can run:
+https://user-images.githubusercontent.com/98188684/199517729-01698143-631d-44b8-b31a-86822b08498a.mov
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features:
+- Users can see a list of all of the top articles from the NY Times.
+- Users can click on an article and it will take them to another page with a more detailed view of that article.
+- Users can navigate to the actual article on the New York Times webstie, by clicking on the hyperlink provided. 
+- Users can click the home button to navigate back to the list of articles. 
 
-### `npm test`
+## Set Up
+- In your terminal, run `git clone https://github.com/AnaBennett11/newsreader`
+- Make a new directory and `cd` into it. 
+- Install NPM packages with `npm install`.
+- Run `npm start` in your terminal. This runs the app locally. 
+- Open `http://localhost:3000` in your browser to see the application. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used: <br>
+<img alt="React" src="https://user-images.githubusercontent.com/25181517/117448085-96eed600-af3e-11eb-9492-83a3a0fcbfb1.png" width="22px"/> React <br>
+<img alt="Cypress" src="https://user-images.githubusercontent.com/102757890/188327611-9db68508-44e6-429d-9eed-0d8a243302a1.png" width="20px"/> Cypress <br>
+<img alt="React Router" src="https://user-images.githubusercontent.com/102757890/188328033-172b27de-1636-4629-b997-2eadb33634ad.png" width="20px"/> React Router
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Possible future extensions:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Allow the user to search for an article with a search bar. 
+- Allow the user to favorite articles of their choice. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Organization:
+[Project Board](https://github.com/users/AnaBennett11/projects/2)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contriubtors:
+- [Ana Bennett](https://github.com/AnaBennett11)
+- [LinkedIn](https://www.linkedin.com/in/ana-bennett/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Project Spec:
+- The instructions for this project can be found [here](https://mod4.turing.edu/projects/take_home/take_home_fe)
