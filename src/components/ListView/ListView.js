@@ -1,8 +1,9 @@
 import React from 'react';
+import Form from '../Form/Form';
 import { Link } from 'react-router-dom';
 import './ListView.css';
 
-const ListView = ({ appState, displaySelectedArticle }) => {
+const ListView = ({ appState, displaySelectedArticle, displayDropDownArticle }) => {
     let sortedArticles = appState.sort((a, b) =>
         (a.section > b.section) ? 1 : ((b.section > a.section) ? -1 : 0))
 
@@ -25,6 +26,7 @@ const ListView = ({ appState, displaySelectedArticle }) => {
     return (
         <div className='newContainer'>
             <h1>Top Stories sorted by Section</h1>
+            <Form displayDropDownArticle={displayDropDownArticle}/>
             <div className='listView'>
                 <section>
                     {mappedArticles}
