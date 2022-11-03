@@ -22,7 +22,6 @@ const App = () => {
 
   }
 
-
   const displayDropDownArticle = (title) => {
     getAllArticles(title)
       .then(data => setAppState(data.results))
