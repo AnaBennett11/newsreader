@@ -2,15 +2,19 @@
 
 Visit this app to see the NY Times top stories!
 ## Views:
-https://user-images.githubusercontent.com/98188684/199517460-ba2483da-77df-43f9-89f0-69c50ae10347.mov
+
+https://user-images.githubusercontent.com/98188684/199992312-18050a63-acea-4db3-8c45-4e411755e5ed.mov
 
 
-https://user-images.githubusercontent.com/98188684/199517729-01698143-631d-44b8-b31a-86822b08498a.mov
+https://user-images.githubusercontent.com/98188684/199992955-bd9f3c32-72d6-4832-a161-7e9c74c98617.mov
+
+
 
 
 
 ## Features:
 - Users can see a list of all of the top articles from the NY Times.
+- Users can select a word from a drop down and a list of articles related to that word will display.
 - Users can click on an article and it will take them to another page with a more detailed view of that article.
 - Users can navigate to the actual article on the New York Times webstie, by clicking on the hyperlink provided. 
 - Users can click the home button to navigate back to the list of articles. 
@@ -28,9 +32,7 @@ https://user-images.githubusercontent.com/98188684/199517729-01698143-631d-44b8-
 <img alt="React Router" src="https://user-images.githubusercontent.com/102757890/188328033-172b27de-1636-4629-b997-2eadb33634ad.png" width="20px"/> React Router
 
 
-## Possible future extensions:
-
-- Allow the user to search for an article with a search bar. 
+## Possible future extensions: 
 - Allow the user to favorite articles of their choice. 
 
 ## Organization:
